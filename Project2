@@ -1,0 +1,95 @@
+#Kaitlin Morgan
+#Lab Assignment 02
+
+#<!------------------Simple Calculator--------------->
+
+print("Welcome to calculator!")
+#Tells calculator to start while loop or stop if 1 not entered
+on = input("To calculate something, press 1 and hit enter.")
+#while loop to repeat calculations
+while on == "1":
+#Selection opperation symbol to apply to if statements
+    opp = input("Enter an opperation (+, -, *, or /): ")
+#For addition
+    if opp == "+":
+#Recognize #+# expression
+        add_expr = input("Enter an addition expression: ")
+#Find plus sign in expression
+        add_ind = add_expr.find("+")
+#Find number before plus sign
+        add_num1 = float(add_expr[0:add_ind])
+#Find number after plus sign
+        add_num2 = float(add_expr[add_ind:])
+#Sum of expression
+        Sum = float(add_num1+add_num2)
+        print(add_expr, "=", Sum)
+#Enterting 2 will shut off calculator
+        off1 = input("To turn calculator off, press 2 or hit enter to continue.")
+#If 2 is not entered, it will keep looping
+        if off1 != "2":
+            print()
+#Stops code, shuts off calculator if 2 is entered
+        else:
+            print("Bye!")
+            break
+#Subtraction
+    elif opp == "-":
+#Recognizes expression #-#
+        sub_expr = input("Enter a subtraction expression: ")
+#Finds minus sign
+        sub_ind = sub_expr.find("-")
+#Finds number before minus sign
+        sub_num1 = float(sub_expr[0:sub_ind])
+#Finds number after minus sign
+        sub_num2 = float(sub_expr[sub_ind:])
+#Adds strings which subtracts numbers
+        Diff = float(sub_num1+sub_num2)
+        print(sub_expr, "=", Diff)
+#Another prompt to stop or continue calculator
+        off2 = input("To turn calculator off, press 2 or hit enter to continue.")
+        if off2 != "2":
+            print()
+        else:
+            print("Bye!")
+            break
+#Multiplication
+    elif opp == "*":
+#Entering numbers to multiply
+        mult_num1 = float(input("Enter first number: "))
+        mult_num2 = float(input("Enter second number: "))
+#Multiplying numbers
+        Prod = float(mult_num1*mult_num2)
+        print(mult_num1, "*", mult_num2, "=", Prod)
+#Prompt to stop or continue calculator
+        off3 = input("To turn calculator off, press 2 or hit enter to continue: ")
+        if off3 != "2":
+            print()
+        else:
+            print("Bye!")
+            break
+#Division
+    elif opp =="/":
+#Entering numerator
+        div_num1 = float(input("Enter numerator: "))
+#Entering denominator
+        div_num2 = float(input("Enter denominator: "))
+#Dividing numerator by denominator
+        Quo = float(div_num1/div_num2)
+        print(div_num1, "/", div_num2, "=", Quo)
+#Prompt to stop or continue calculator
+        off4 = input("To turn calculator off, press 2 or hit enter to continue.")
+        if off4 != "2":
+            print()
+        else:
+            print("Bye!")
+            break
+#Error if opperation entered isn't +, -, *, or /
+    else:
+        print("Error: invalid opperation")
+        off5 = input("To turn calculator off, press 2 or hit enter to continue.")
+#Last prompt to stop or continue calculator
+        if off5 != "2":
+            print()
+        else:
+            print("Bye!")
+            break
