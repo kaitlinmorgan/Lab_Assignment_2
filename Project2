@@ -8,8 +8,8 @@ print("Welcome to calculator!")
 on = input("To calculate something, press 1 and hit enter.")
 #while loop to repeat calculations
 while on == "1":
-#Selection opperation symbol to apply to if statements
-    opp = input("Enter an opperation (+, -, *, or /): ")
+#Selection operation symbol to apply to if statements
+    opp = input("Enter an operation (+, -, *, or /): ")
 #For addition
     if opp == "+":
 #Recognize #+# expression
@@ -83,9 +83,9 @@ while on == "1":
         else:
             print("Bye!")
             break
-#Error if opperation entered isn't +, -, *, or /
+#Error if operation entered isn't +, -, *, or /
     else:
-        print("Error: invalid opperation")
+        print("Error: invalid operation")
         off5 = input("To turn calculator off, press 2 or hit enter to continue.")
 #Last prompt to stop or continue calculator
         if off5 != "2":

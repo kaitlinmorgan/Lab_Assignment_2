@@ -1,0 +1,31 @@
+<!---------------Report------------->
+
+The objectives of this program were to create a simple calculator able to do
+operations in including addition, subtraction, multiplication, and division.
+The calculator was meant to be able to turn on and off when the user wanted
+and recognize these different operations and perform them in a while loop.  The
+calculator was also meant to store previous data for two previously calculated
+answers.
+
+The main variables needed for this were "on" the variable that started the
+calculator while loop when hitting 1, "opp" where the user inputs a symbol
+to conduct the if statements for the applicable operation.  Each operation
+had similar variables, each named slightly different to distinguish them from
+each other although meant to recognize numbers and operation symbols and
+perform the operations.  The "off" prompts stop the calculator and are used
+with "break" to break the while loop.
+
+To extract numbers from the strings, I used the find method, which located the
+operation symbol in an entered expression for the addition and subtraction
+sections.  I then used a range in correlation to the identified operation
+symbol and the numbers before it and after it, no matter how many were entered.
+
+As for errors, in the multiplication and division sections I could not get
+the same find method to work as it kept giving me errors.  So I simply split
+the code for more possible user inputs and made it work.  I could not figure
+out how to store previous replies properly, I kept getting errors that my list
+would not work so I removed it altogether to avoid messing up the code.
+Initially the subtraction section kept adding the numbers together until I
+figured out that the "diff" section needed to remain as a plus and not a minus
+because the minus cancelled out the find operation and added them because of a
+double negative.
